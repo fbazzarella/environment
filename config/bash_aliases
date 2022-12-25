@@ -1,0 +1,17 @@
+# Git
+alias gs='git status'
+alias ga='git add --all'
+alias gc='git commit'
+alias gl='git log'
+alias gb='git checkout'
+alias pull='git pull'
+alias push='git push'
+
+# Rails
+alias dbmigrate='rake db:migrate db:test:prepare'
+alias dbrollback='rake db:rollback db:test:prepare'
+alias dbmigback='rake db:migrate db:rollback'
+alias dbreset='rake db:reset db:test:prepare'
+alias cleanup='rake log:clear tmp:clear'
+alias rs='rails server -b 0.0.0.0'
+alias sq='sidekiq -q default'
