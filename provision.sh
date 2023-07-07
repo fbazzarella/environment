@@ -2,7 +2,7 @@
 
 sudo apt update -qq
 sudo apt upgrade -y
-sudo apt install -y curl git gnupg2
+sudo apt install -y curl git gnupg2 libpq-dev postgresql-contrib
 
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
@@ -18,7 +18,15 @@ rvm use $RUBY_VERSION@global
 rvm rvmrc warning ignore allGemfiles
 rvm cleanup all
 
-gem install colorls
+gem update --system
+gem install colorls rails
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.39.2/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm install --lts --default
 
 mkdir -p ~/.config/colorls
 

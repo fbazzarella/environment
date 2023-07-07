@@ -146,9 +146,15 @@ GIT_STATUS='$(__git_ps1 "[%s]")'
 
 PS1="${CYAN}\u ${NO_COLOR}on ${RED}\W${YELLOW}${GIT_STATUS}${GREEN} \$ ${NO_COLOR}"
 
-# cd "$(cat ~/.lastdir)"
+if [ -f ~/.lastdir ]; then
+	cd $(cat ~/.lastdir);
+fi
 
-# cd() {
-#         echo "$1" > ~/.lastdir
-#         builtin cd "$1"
-# }
+cd() {
+    echo "$(pwd)/$1" > ~/.lastdir
+    builtin cd "$1"
+}
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
