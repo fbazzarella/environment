@@ -1,7 +1,7 @@
 # System
 alias psa='ps aux | grep'
 alias aliases='editor ~/.bash_aliases'
-alias upgrade='sudo apt update -qq && sudo apt -y upgrade'
+alias upgrade='sudo apt update && sudo apt -y upgrade'
 
 # Git
 alias gs='git status'

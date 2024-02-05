@@ -1,22 +1,24 @@
 [user]
-  name = Felipe Bazzarella
-  email = fbazzarella@gmail.com
+	name = Felipe Bazzarella
+	email = fbazzarella@gmail.com
 [color]
-  branch = auto
-  diff = auto
-  status = auto
-  ui = true
+	branch = auto
+	diff = auto
+	status = auto
+	ui = true
 [color "diff"]
-  commit = yellow
-  frag = cyan
-  meta = yellow
-  new = green
-  old = red
-  plain = black
-  whitespace = red reverse
+	commit = yellow
+	frag = cyan
+	meta = yellow
+	new = green
+	old = red
+	plain = black
+	whitespace = red reverse
 [core]
-  editor = nano
+	editor = nano
 [alias]
-  lg = log --graph --pretty=format:'%Cred%h%Creset %Cblue[%an]%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
+	lg = log --graph --pretty=format:'%Cred%h%Creset %Cblue[%an]%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
 [push]
-  default = current
+	default = current
+[init]
+	defaultBranch = main
