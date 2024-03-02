@@ -2,6 +2,7 @@
 alias psa='ps aux | grep'
 alias aliases='editor ~/.bash_aliases'
 alias upgrade='sudo apt update && sudo apt -y upgrade'
+alias cf='ls -1 | wc -l'
 
 # Git
 alias gs='git status'
@@ -30,7 +31,7 @@ alias drails='dcer bin/rails'
 alias dsetup='dcer bin/setup'
 alias ddev='dcer bin/dev'
 alias dbash='dcer /bin/bash'
-alias bundle='dcer bundle'
+#alias bundle='dcer bundle'
 alias rspec='dcer rspec'
 alias sidekiq='dcer sidekiq -q default'
 alias dbseed='drails db:seed'
