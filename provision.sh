@@ -10,7 +10,7 @@ curl -sSL https://get.rvm.io | bash -s stable --auto-dotfiles
 
 source "$HOME/.rvm/scripts/rvm"
 
-RUBY_VERSION="3.2.2"
+RUBY_VERSION="3.1.4"
 
 rvm install $RUBY_VERSION
 rvm alias create default $RUBY_VERSION@global
@@ -19,7 +19,7 @@ rvm rvmrc warning ignore allGemfiles
 rvm cleanup all
 
 gem update --system
-gem install colorls rails
+gem install colorls rails srb debug htmlbeautifier
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.39.2/install.sh | bash
 
