@@ -1,19 +1,25 @@
+# Custom
+alias gp-provision='cp ../gp-provision.sh ./ && ./gp-provision.sh && rm gp-provision.sh'
+
 # System
-alias psa='ps aux | grep'
+alias upgrade='sudo apt update && sudo apt -y upgrade'
 alias aliases='editor ~/.bash_aliases'
 alias aliases-cat='cat ~/.bash_aliases'
-alias upgrade='sudo apt update && sudo apt -y upgrade'
-alias cf='ls -1 | wc -l'
+alias count-lines='ls -1 | wc -l'
+alias psa='ps aux | grep'
 
 # Git
 alias gs='git status'
 alias ga='git add'
 alias gr='git restore'
+alias grc='gr --cached'
 alias gc='git commit'
+alias gca='gc --amend'
 alias gl='git log'
 alias gb='git checkout'
 alias pull='git pull'
 alias push='git push'
+alias branch='git branch'
 
 # Docker
 alias dk='docker'
@@ -26,9 +32,17 @@ alias dcb='dc build'
 alias dcu='dc up'
 alias dcs='dc stop'
 alias dce='dc exec'
-#alias dcer='dce rails'
 
 # Rails
+alias rspec='bundle exec rspec'
+alias dbmigrate='rails db:migrate db:test:prepare'
+alias dbrollback='rails db:rollback db:test:prepare'
+alias dbforback='rails db:migrate db:rollback'
+alias rs='rails server'
+alias rc='rails console'
+
+# Rails on Docker
+#alias dcer='dce rails'
 #alias drails='dcer bin/rails'
 #alias dsetup='dcer bin/setup'
 #alias ddev='dcer bin/dev'
