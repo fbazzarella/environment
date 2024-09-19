@@ -34,6 +34,7 @@ alias dcs='dc stop'
 alias dce='dc exec'
 
 # Rails
+alias rails='bin/rails'
 alias rspec='bundle exec rspec'
 alias dbmigrate='rails db:migrate db:test:prepare'
 alias dbrollback='rails db:rollback db:test:prepare'
