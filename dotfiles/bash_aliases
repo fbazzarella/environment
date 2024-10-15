@@ -17,8 +17,10 @@ alias gc='git commit'
 alias gca='gc --amend --no-edit'
 alias gl='git log'
 alias gb='git checkout'
-alias pull='git pull'
-alias push='git push'
+alias pull-origin='git pull origin'
+alias pull-master='git checkout master && git pull origin master'
+alias pull-dev='git checkout development && git pull origin development'
+alias push='git push -u'
 alias branch='git branch'
 
 # Docker
@@ -35,12 +37,12 @@ alias dce='dc exec'
 
 # Rails
 alias rails='bin/rails'
-alias rspec='bundle exec rspec'
 alias dbmigrate='rails db:migrate db:test:prepare'
 alias dbrollback='rails db:rollback db:test:prepare'
-alias dbforback='rails db:migrate db:rollback'
+alias dbmigback='rails db:migrate db:rollback'
 alias rs='rails server'
 alias rc='rails console'
+alias rspec='bundle exec rspec'
 
 # Rails on Docker
 #alias dcer='dce rails'
