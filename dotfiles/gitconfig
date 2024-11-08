@@ -1,6 +1,7 @@
 [user]
 	name = Felipe Bazzarella
 	email = fbazzarella@gmail.com
+	signingkey = 914D536E
 [color]
 	branch = auto
 	diff = auto
@@ -22,3 +23,5 @@
 	default = current
 [init]
 	defaultBranch = main
+[gpg]
+	program = /usr/bin/gpg2
