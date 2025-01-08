@@ -27,6 +27,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 nvm install --lts --default
+npm install --global yarn
+yarn config set "strict-ssl" false
 
 mkdir -p ~/.config/colorls
 
