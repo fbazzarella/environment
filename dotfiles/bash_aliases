@@ -43,7 +43,9 @@ alias dbrollback='rails db:rollback db:test:prepare'
 alias dbmigback='rails db:migrate db:rollback'
 alias rs='rails server'
 alias rc='rails console'
-alias rspec='bundle exec rspec'
+alias be='bundle exec'
+alias rspec='be rspec'
+alias sidekiq='be sidekiq'
 
 # Rails on Docker
 #alias dcer='dce rails'
