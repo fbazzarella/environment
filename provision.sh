@@ -28,7 +28,7 @@ yarn config set "strict-ssl" false
 
 mkdir -p ~/.config/colorls
 
-ln -sf ~/projects/_environment/configs/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
-ln -sf ~/projects/_environment/dotfiles/bash_aliases ~/.bash_aliases
-ln -sf ~/projects/_environment/dotfiles/bashrc ~/.bashrc
-ln -sf ~/projects/_environment/dotfiles/gitconfig ~/.gitconfig
+ln -sf ~/projects/_environment/dark_colors.yaml ~/.config/colorls/dark_colors.yaml
+ln -sf ~/projects/_environment/bash_aliases ~/.bash_aliases
+ln -sf ~/projects/_environment/bashrc ~/.bashrc
+ln -sf ~/projects/_environment/gitconfig ~/.gitconfig
