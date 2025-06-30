@@ -1,6 +1,3 @@
-# Custom
-alias gp-provision='cp ../gp-provision.sh ./ && ./gp-provision.sh && rm gp-provision.sh'
-
 # System
 alias upgrade='sudo apt update && sudo apt -y upgrade'
 alias aliases='editor ~/.bash_aliases'
@@ -24,11 +21,6 @@ alias gpomaster='gco master && gpo master'
 alias gpodev='gco development && gpo development'
 alias gp='git push -u'
 
-# AWS
-alias aws-login='aws sso login --profile grafeno-dev'
-alias aws-describe-instances="aws ec2 describe-instances --filters Name=instance-state-name,Values=running --query 'Reservations[*].Instances[*].{Instance:InstanceId,LaunchTime:LaunchTime,Name:Tags[?Key==\`Name\`]|[0].Value}' --output table --region us-east-1 --profile grafeno-dev"
-alias aws-start-session='aws ssm start-session --profile grafeno-dev --region us-east-1 --target'
-
 # Docker
 alias dk='docker'
 alias psc='dk ps --all'
@@ -42,7 +34,7 @@ alias dcs='dc stop'
 alias dce='dc exec'
 
 # Rails
-alias rails='bin/rails'
+# alias rails='bin/rails'
 alias dbmigrate='rails db:migrate db:test:prepare'
 alias dbrollback='rails db:rollback db:test:prepare'
 alias dbmigback='rails db:migrate db:rollback'
