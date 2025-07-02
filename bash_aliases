@@ -5,6 +5,10 @@ alias aliases-cat='cat ~/.bash_aliases'
 alias count-lines='ls -1 | wc -l'
 alias psa='ps aux | grep'
 
+# Tar
+alias tarcompress='tar -zcvf'
+alias tarextract='tar -zxvf'
+
 # Git
 alias gs='git status'
 alias ga='git add'
