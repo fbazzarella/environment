@@ -21,8 +21,8 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gfo='git fetch origin'
 alias gpo='git pull origin'
-alias gpomaster='gco master && gpo master'
-alias gpodev='gco development && gpo development'
+alias gpcb='gpo $(git rev-parse --abbrev-ref HEAD)'
+alias gpomain='gco main && gpo main'
 alias gp='git push -u'
 
 # Docker

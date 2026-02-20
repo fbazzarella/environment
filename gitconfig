@@ -1,7 +1,7 @@
 [user]
 	name = Felipe Bazzarella
 	email = fbazzarella@gmail.com
-	signingkey = 14878D9533345FC741304F9F4EF664059926B496
+	signingkey = FE15915EC1E1AE97CBE8B7D00BBB77719B057FBF
 [color]
 	branch = auto
 	diff = auto
@@ -29,3 +29,9 @@
 	gpgSign = true
 [tag]
 	gpgSign = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
